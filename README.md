@@ -1,2 +1,2 @@
 # DevWeb01
- HMLT5, CSS3, JS
+ HMLT, CSS, JS
