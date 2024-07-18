@@ -1,3 +1,10 @@
+:root{
+    --red: rgba(151, 59, 40, 1);
+    --darkgreen :rgba(87, 88, 59, 1);
+    --green : rgba(102, 141, 81 ,1);
+    --yellow : rgba(223, 193, 98, 1);
+}
+
 html{
     font-size: 62.5%;
 }
@@ -7,7 +14,7 @@ body{
 
 .title {
     text-align:center;
-    color:rgb(165, 159, 42);
+    color:var(--darkgreen);
     font-size: 3.8 rem;
 }
 
