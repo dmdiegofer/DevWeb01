@@ -1,8 +1,8 @@
-:root{
+:root {
     --red: rgba(151, 59, 40, 1);
-    --darkgreen :rgba(87, 88, 59, 1);
-    --green : rgba(102, 141, 81 ,1);
-    --yellow : rgba(223, 193, 98, 1);
+    --darkgreen: rgba(87, 88, 59, 1);
+    --green: rgba(102, 141, 81, 1);
+    --yellow: rgba(223, 193, 98, 1);
 }
 
 html{
@@ -11,20 +11,38 @@ html{
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: "Ubuntu", sans-serif;
-    font-style:normal;
-    color:var(--darkgreen);
+    font-style: normal;
+    color: var(--darkgreen);
 }
-
 
 .title {
-    text-align:center;
-    color:var(--red);
+    text-align: center;
+    color: var(--red);
     font-size: 3.8rem;
     font-weight: 700;
-    font-style:italic;
+    font-style: italic;
 }
 
+.title span {
+    font-size: 2rem;
+}
 
-.title span{
-    font-size : 2rem;
+.container {
+    width: 120rem;
+    margin: 0;
+}
+.nav-background{
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+}
+.main-navbar {
+    padding : 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.main-navbar a {
+    color: var(--darkgreen);
+    text-decoration: none;
+
 }
