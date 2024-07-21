@@ -1,23 +1,29 @@
 :root {
-    --red: rgba(151, 59, 40, 1);
-    --darkgreen: rgba(87, 88, 59, 1);
-    --green: rgba(102, 141, 81, 1);
-    --yellow: rgba(223, 193, 98, 1);
+    --red: rgba(151, 59, 40, 0.8);
+    --darkgreen: rgba(87, 88, 59, 0.9);
+    --green: rgba(102, 141, 81, 0.8);
+    --yellow: rgba(223, 193, 98, 0.8);
 }
 
 html{
     font-size: 62.5%;
 }
 body{
+    background-color: var(--darkgreen);
     font-size: 16px; /* 1rem = 10px */
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
-    color: var(--darkgreen);
+    color: white;
 }
 
+.bg-title{
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+}
 .title {
     text-align: center;
-    color: var(--red);
+    color: white;
     font-size: 3.8rem;
     font-weight: 700;
     font-style: italic;
@@ -46,8 +52,6 @@ body{
     font-size: 2rem;
     padding : 1rem;
     font-weight: 500;
-
-
 }
 .main-navbar a:hover{
     background-color: var(--green);
@@ -57,5 +61,22 @@ body{
 .main-navbar a:focus{
     background-color: var(--green);
     color: var(--yellow);
-    
+}
+.sb-title{
+    text-align: center;
+}
+.sb-title a{
+    margin: 0.5rem;
+    padding:  1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--yellow);
+    color: var(--red);
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration:none;
+}
+.sb-title a:hover{
+    background-color: var(--green);
+    color:white;
 }
