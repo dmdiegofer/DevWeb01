@@ -34,23 +34,31 @@ body{
 }
 
 .container {
-    width: 120rem;
+    max-width: 120rem;
     margin: 0;
 }
 .nav-background{
     background-color: var(--yellow);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .main-navbar {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .main-navbar {
+        flex-direction: row;
+    }
 }
 .main-navbar a {
+    
     color: var(--darkgreen);
     text-decoration: none;
     font-size: 2rem;
     padding : 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     font-weight: 500;
 }
 .main-navbar a:hover{
@@ -78,4 +86,5 @@ body{
 .sb-title a:hover{
     background-color: var(--green);
     color:white;
+    font-weight: bold;
 }
