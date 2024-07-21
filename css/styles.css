@@ -7,6 +7,10 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 body{
     background-color: var(--darkgreen);
@@ -71,7 +75,16 @@ body{
     color: var(--yellow);
 }
 .sb-title{
+    background-image: url(../img/sb_title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sb-content{
+    background-color: var(--yelow);
     text-align: center;
+    color: var(--darkgreen);
+    padding: 2rem;
+
 }
 .sb-title a{
     padding:  1rem;
