@@ -1,19 +1,19 @@
 :root {
-    --red: rgba(151, 59, 40, 0.8);
+    --red: rgba(151, 59, 40, 0.7);
     --darkgreen: rgba(87, 88, 59, 0.9);
-    --green: rgba(102, 141, 81, 0.8);
+    --green: rgba(102, 141, 81, 0.7);
     --yellow: rgba(223, 193, 98, 0.8);
 }
 /*   GLOBALS    */
 html{
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box;/* HACK BOXMODEL */
 }
 *, *:before, *:after{
     box-sizing: inherit;
 }
 body{
-    background-color: var(--darkgreen);
+    background-image: linear-gradient(to right, rgba(87, 88, 59, 1) 0%, var(--darkgreen) 80%);
     font-size: 16px; /* 1rem = 10px */
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
@@ -58,19 +58,24 @@ h1,h2,h3{
     text-align: center;
     font-weight: bold;
 }
-/* TITULOS */
+/* TITLES */
 .bg-title{
-    background-color: var(--red);
+    background-image: linear-gradient(to right, rgba(151, 59, 40, 1) 0%, var(--red) 80%);
     display: flex;
     justify-content: center;
 }
 .container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     max-width: 120rem;
-    margin: 0;
+    margin: 5rem;
 }
 /* MAIN NAV BAR */
 .nav-background{
-    background-color: var(--yellow);
+    background-image: linear-gradient(to right, rgba(223, 193, 98, 1) 98%, var(--darkgreen) 100%);
     display: flex;
     justify-content: space-around;
 }
@@ -131,4 +136,13 @@ h1,h2,h3{
 .img-content p span{
     padding: 1rem;
 }
-
+/* SERVICES */
+.services{
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    text-align: justify;
+    padding: 2rem 4rem;
+    
+}
