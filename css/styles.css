@@ -246,3 +246,8 @@ h1,h2,h3{
 .field_contact_form textarea {
     height: 15rem;
 }
+/* FOOTER */
+.footer{
+    text-align: center;
+    color: var(--yellow);
+}
