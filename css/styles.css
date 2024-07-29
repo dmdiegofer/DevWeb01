@@ -8,6 +8,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;/* HACK BOXMODEL */
+    scroll-snap-type: y mandatory;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -31,6 +32,11 @@ main{
     text-decoration:none;
     border-radius: .7rem;
     width: 70%;
+}
+/* SCROLL SNAP */
+.services, .img-content , .contact_form {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 @media (min-width: 768px) {
     .button {
